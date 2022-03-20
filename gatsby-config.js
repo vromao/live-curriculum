@@ -1,4 +1,5 @@
 module.exports = {
+  jsxRuntime: 'automatic',
   siteMetadata: {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'live-curriculum',

@@ -5,7 +5,7 @@ module.exports = {
     __TRAILING_SLASH__: true,
     __BASE_PATH__: true,
   },
-  extends: ['airbnb', 'airbnb/hooks', 'plugin:storybook/recommended', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'plugin:storybook/recommended', 'prettier', 'stylelint'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {

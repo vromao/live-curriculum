@@ -1,0 +1,21 @@
+@use '../../styles/settings' as *;
+@use '../../styles/tools' as *;
+@use "sass:color";
+
+.button {
+  transition: background .2s ease-out;
+  border-radius: $base-border-radius;
+  box-shadow: 0 4px 4px rgba(0 0 0 / 25%);
+  background: $color-primary;
+  cursor: pointer;
+  min-width: rem(184px);
+  height: rem(48px);
+  text-transform: uppercase;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    background: color.adjust($color-primary, $lightness: -10%);
+  }
+}

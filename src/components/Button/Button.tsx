@@ -5,8 +5,11 @@ type Props = {
   text: string;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-export const Button = ({ text, ...rest }: Props): JSX.Element => {
-  return <button {...rest} className={buttonStyles.button}>{text}</button>;
-};
+/* eslint-disable react/jsx-props-no-spreading */
+export const Button = ({ text, ...rest }: Props): JSX.Element => (
+  <button {...rest} type="button" className={buttonStyles.button}>
+    {text}
+  </button>
+);
 
 export default Button;

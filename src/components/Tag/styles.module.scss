@@ -1,0 +1,15 @@
+@use '../../styles/settings' as *;
+@use '../../styles/tools' as *;
+@use "sass:color";
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  border: solid 1px $color-secondary;
+  border-radius: $base-border-radius;
+  padding: 0 rem(16px);
+  height: rem(32px);
+  color: $color-secondary;
+  font-size: 16px;
+  font-weight: bold;
+}
